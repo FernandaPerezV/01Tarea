@@ -1,3 +1,5 @@
+#Este programa calcula la integral de planck para un cuerpo negro con T=5778K
+#usando integrate.quad de scipy
 import numpy as np
 from scipy import integrate
 from astropy import constants as const

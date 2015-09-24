@@ -1,4 +1,6 @@
-﻿import numpy as np
+﻿#Este programa calcula la integral de planck para un cuerpo negro con T=5778K
+#mediante metodo de simpson
+import numpy as np
 from math import pi
 from astropy import constants as const
 from astropy import units as u
@@ -23,7 +25,7 @@ for i in range(n/2):
 
 integral=(dx/3.)*suma
 integralPlanck=( (2*pi*const.h/const.c**2) * ((const.k_B*(5778*u.K)/const.h)**4) ) * integral
-print('energia por unidad de tiempo y area de un cuerpo negro con Teff_sol=', integralPlanck.to('erg / (s cm2)'))
+print('energia por unidad de tiempo y area de un cuerpo negro con Teff_sol=5778K = ', integralPlanck.to('erg / (s cm2)'))
 
 
 

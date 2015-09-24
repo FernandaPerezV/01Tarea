@@ -1,3 +1,4 @@
+#Este programa calcula la integral del espectro mediant integrate.trapz de scipy
 import numpy as np
 from scipy import integrate
 from astropy import constants as const
